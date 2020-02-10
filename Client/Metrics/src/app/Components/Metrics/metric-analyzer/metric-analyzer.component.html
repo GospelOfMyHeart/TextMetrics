@@ -1,0 +1,7 @@
+<div class="container">
+<app-text-input (textSubmit)="onTextSubmit($event)"></app-text-input>
+<app-metric-list [metricModels]="metricModels"></app-metric-list>
+<div class="error alert-danger"*ngIf="isError">
+    {{this.errorText}}
+</div>
+</div>

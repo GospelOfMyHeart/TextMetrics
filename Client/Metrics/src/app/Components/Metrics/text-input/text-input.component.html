@@ -1,0 +1,11 @@
+<section>
+        <div class="row">
+            <textarea class="col-12 form-control" rows = "10" [(ngModel)]="inputText" placeholder="Введите текст" (keyup.enter)="submitText()">
+            </textarea>
+        </div>
+        <div class="row">
+            <button class="col-12 form-control" (click)="submitText()">
+                Анализ
+            </button>
+        </div>
+</section>

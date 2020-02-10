@@ -1,0 +1,9 @@
+<section class= "panel panel-primary "  *ngIf = "metricModels.length>0">
+    <ul class = "list-group">
+        <li class="metric-list" *ngFor = "let metric of metricModels">
+            <app-metric [metricModel] = "metric">
+                
+            </app-metric>
+        </li>
+    </ul>
+</section>
